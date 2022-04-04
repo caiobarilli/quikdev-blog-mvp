@@ -60,7 +60,7 @@ function Login() {
                   />
                 </svg>
               </span>
-              Registrar
+              Entrar
             </button>
           </div>
         </form>
