@@ -1,10 +1,23 @@
+import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">QUICKDEV BLOG MVP</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+      <Outlet />
+    </>
   )
 }
 
