@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom'
 
 function Dashboard() {
-  const shouldRedirect = true
+  const shouldRedirect = false
 
   return (
     <div className="Dashboard">
